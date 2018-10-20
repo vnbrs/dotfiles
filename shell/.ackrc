@@ -1,0 +1,18 @@
+--color
+
+# Type definitions {{{
+  --type-add=css=scss
+  --type-add=ruby=.haml,.rselm,.feature,.ru,.lock
+
+  --type-set=coffeescript=.coffee
+  --type-set=coffee=.coffee
+  --type-set=json=.json
+#}}}
+
+# Ignored paths {{{
+  --ignore-dir=node_modules
+  --ignore-dir=tmp
+  --ignore-dir=temp
+  --ignore-dir=log
+#}}}
+
