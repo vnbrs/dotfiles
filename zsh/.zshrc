@@ -1,36 +1,32 @@
-export ZSH=$HOME/.oh-my-zsh
-eval "$(rbenv init -)"
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
+export PATH="/Users/vnbrs/google-cloud-sdk/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+export ZSH="/Users/vnbrs/.oh-my-zsh"
+export EDITOR='vim'
 
 ZSH_THEME="robbyrussell"
 CASE_SENSITIVE="false"
-HYPHEN_INSENSITIVE="true"
+ENABLE_CORRECTION="false"
 
 plugins=(
   git
+  osx
+  dotenv
+  bundler
+  rake
+  ruby
+  rbenv
+  brew
+  docker-compose
+  fzf
+  gem
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+eval "$(rbenv init -)"
 
+source $HOME/.aliases
 source $ZSH/oh-my-zsh.sh
-source ~/.inputrc
-source ~/.config/aliases
-
-export EDITOR='vim'
-export SSH_KEY_PATH="~/.ssh/rsa_id"
-export LC_CTYPE="en_US.UTF-8"
-export LANG="en_US.UTF-8"
-
-# prompt
-source $HOME/.zsh_prompt
-
-# Update PATH for the Google Cloud SDK
-source $HOME/google-cloud-sdk/path.zsh.inc
-
-# gcloud completion
-source $HOME/google-cloud-sdk/completion.zsh.inc
-
-# googler completion
-source $HOME/google-cloud-sdk/completion.zsh.inc
-
-# syntax highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
