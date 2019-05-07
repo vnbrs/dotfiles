@@ -1,0 +1,10 @@
+[user]
+    name = Vinicius Brasil
+    email = vnbrs@icloud.com
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+    attributesfile = ~/.gitattributes
+	hooksPath = /home/vnbrs/.githooks
+[color]
+    ui = auto
