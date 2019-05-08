@@ -1,7 +1,13 @@
 DOTFILES=(
-    "$HOME/.bash_aliases"
-    "$HOME/.profile"
     "$HOME/.bashrc"
+    "$HOME/.bash_profile"
+    "$HOME/.bash_prompt"
+    "$HOME/.profile"
+    "$HOME/.path"
+    "$HOME/.exports"
+    "$HOME/.aliases"
+    "$HOME/.functions"
+    "$HOME/.extra"
     "$HOME/.gitconfig"
     "$HOME/.githooks/"
     "$HOME/.gitignore"
@@ -13,7 +19,10 @@ REPO_GIT_PATH="$REPO_PATH/.git"
 
 for dotfile in "${DOTFILES[@]}"
 do
-    cp -R "$dotfile" $REPO_PATH
+    if [ -z "$dotfile" ]
+    then
+        cp -R "$dotfile" $REPO_PATH
+    fi
 done
 
 git --git-dir="$REPO_GIT_PATH" add .
