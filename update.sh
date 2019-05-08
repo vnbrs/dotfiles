@@ -19,10 +19,7 @@ REPO_GIT_PATH="$REPO_PATH/.git"
 
 for dotfile in "${DOTFILES[@]}"
 do
-    if [ -z "$dotfile" ]
-    then
-        cp -R "$dotfile" $REPO_PATH
-    fi
+    cp -R "$dotfile" $REPO_PATH
 done
 
 git --git-dir="$REPO_GIT_PATH" add .
