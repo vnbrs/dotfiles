@@ -1,10 +1,56 @@
-temp_dirs/undodir/*
-sources_non_forked/ack.vim/.netrwhist
-temp_dirs/yankring_history_v2.txt
-sources_forked/yankring/doc/tags
-sources_non_forked/tlib/doc/tags
-sources_non_forked/ctrlp.vim/doc/tags*
-my_plugins/
-my_configs.vim
-tags
-.DS_Store
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+
+# Temporary
+.netrwhist
+*~
+
+# Persistent undo
+[._]*.un~
+
+
