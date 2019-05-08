@@ -5,6 +5,6 @@
     editor = vim
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes
-	hooksPath = /home/vnbrs/.githooks
+    hooksPath = ~/.githooks
 [color]
     ui = auto

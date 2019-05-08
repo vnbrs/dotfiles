@@ -90,3 +90,5 @@ fi
 
 # docker
 export DOCKER_HOST=tcp://localhost:2375
+
+export VIM_PLUGIN_PATH="$HOME/.vim_runtime/my_plugins"
