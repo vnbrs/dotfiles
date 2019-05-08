@@ -28,8 +28,5 @@ vimplug () {
 # Update my dotfiles repository
 dotfilesupdate () {
     DOTFILES_REPO_DIR="$HOME/projects/vnbrs/dotfiles"
-    source $DOTFILES_REPO_DIR/utility/update_repo.sh $DOTFILES_REPO_DIR
-    git --git-dir="$DOTFILES_REPO_DIR/.git" add .
-    git --git-dir="$DOTFILES_REPO_DIR/.git" commit -m "(auto) Syncronize dotfiles"
-    git --git-dir="$DOTFILES_REPO_DIR/.git" push origin master
+    source $DOTFILES_REPO_DIR/update.sh
 }
